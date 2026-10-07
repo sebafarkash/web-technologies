@@ -1,0 +1,30 @@
+
+a {
+    color: purple;
+}
+
+.main-link {
+    color: green;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.icons {
+    list-style-image: url("img/li.svg");
+
+}
+
+
+ul li ul {
+    list-style: none;
+}
+
+.square a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}

@@ -1,0 +1,86 @@
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+h1 {
+    color: #ff0000;
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0;
+}
+
+p {
+    text-align: center;
+    margin: 6px 0;
+}
+
+strong {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+sub,
+sup {
+    font-size: 12px;
+}
+
+hr {
+    width: 60%;
+    height: 5px;
+    background-color: green;
+    border: none;
+    margin: 20px auto;
+}
+
+.recipe {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 20px 20px;
+}
+
+.product {
+    line-height: 22px;
+}
+
+.amount {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.underline {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.footer {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+#optional {
+    font-size: 14px;
+    background-color: yellow;
+    text-decoration: underline;
+}
