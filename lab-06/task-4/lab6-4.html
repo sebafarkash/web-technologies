@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторна №6 — Завдання 4: навігаційні панелі</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <nav class="vnav" aria-label="Бічна навігація">
+        <div class="vnav-brand">
+            <span class="material-icons vnav-icon">school</span>
+            <span class="vnav-text">Веб-курс</span>
+        </div>
+
+        <ul class="vmenu">
+            <li class="vmenu-item vmenu-item--active">
+                <a class="vmenu-link" href="#top" aria-current="page">
+                    <span class="material-icons vnav-icon">home</span>
+                    <span class="vnav-text">Головна</span>
+                </a>
+            </li>
+
+            <li class="vmenu-item vmenu-item--parent">
+                <a class="vmenu-link" href="#theory">
+                    <span class="material-icons vnav-icon">menu_book</span>
+                    <span class="vnav-text">Курси</span>
+                </a>
+                <ul class="vsub">
+                    <li class="vsub-item vsub-item--parent">
+                        <a class="vsub-link" href="#theory">Веб-технології</a>
+                        <ul class="vsub">
+                            <li class="vsub-item"><a class="vsub-link" href="#theory">HTML</a></li>
+                            <li class="vsub-item"><a class="vsub-link" href="#theory">CSS</a></li>
+                            <li class="vsub-item"><a class="vsub-link" href="#theory">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="vsub-item vsub-item--parent">
+                        <a class="vsub-link" href="#theory">Бази даних</a>
+                        <ul class="vsub">
+                            <li class="vsub-item"><a class="vsub-link" href="#theory">SQL</a></li>
+                            <li class="vsub-item"><a class="vsub-link" href="#theory">NoSQL</a></li>
+                        </ul>
+                    </li>
+                    <li class="vsub-item"><a class="vsub-link" href="#theory">Алгоритми</a></li>
+                </ul>
+            </li>
+
+            <li class="vmenu-item vmenu-item--parent">
+                <a class="vmenu-link" href="#practice">
+                    <span class="material-icons vnav-icon">mail</span>
+                    <span class="vnav-text">Повідомлення</span>
+                </a>
+                <ul class="vsub">
+                    <li class="vsub-item"><a class="vsub-link" href="#practice">Вхідні</a></li>
+                    <li class="vsub-item vsub-item--parent">
+                        <a class="vsub-link" href="#practice">Папки</a>
+                        <ul class="vsub">
+                            <li class="vsub-item"><a class="vsub-link" href="#practice">Робота</a></li>
+                            <li class="vsub-item"><a class="vsub-link" href="#practice">Особисте</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="vmenu-item vmenu-item--parent">
+                <a class="vmenu-link" href="#faq">
+                    <span class="material-icons vnav-icon">settings</span>
+                    <span class="vnav-text">Налаштування</span>
+                </a>
+                <ul class="vsub">
+                    <li class="vsub-item"><a class="vsub-link" href="#faq">Профіль</a></li>
+                    <li class="vsub-item vsub-item--parent">
+                        <a class="vsub-link" href="#faq">Вигляд</a>
+                        <ul class="vsub">
+                            <li class="vsub-item"><a class="vsub-link" href="#faq">Світла тема</a></li>
+                            <li class="vsub-item"><a class="vsub-link" href="#faq">Темна тема</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hnav">
+        <ul class="hmenu">
+            <li class="hmenu-item hmenu-item--active">
+                <a class="hmenu-link" href="#top" title="Головна" aria-label="Головна" aria-current="page">
+                    <span class="material-icons">home</span>
+                </a>
+            </li>
+
+            <li class="hmenu-item">
+                <a class="hmenu-link" href="#theory" title="Пошук" aria-label="Пошук">
+                    <span class="material-icons">search</span>
+                </a>
+                <ul class="hsub">
+                    <li class="hsub-item"><a class="hsub-link" href="#theory">Швидкий пошук</a></li>
+                    <li class="hsub-item hsub-item--parent">
+                        <a class="hsub-link" href="#theory">Розширений пошук</a>
+                        <ul class="hsub">
+                            <li class="hsub-item"><a class="hsub-link" href="#theory">За назвою</a></li>
+                            <li class="hsub-item"><a class="hsub-link" href="#theory">За датою</a></li>
+                            <li class="hsub-item"><a class="hsub-link" href="#theory">За тегом</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hmenu-item">
+                <a class="hmenu-link" href="#practice" title="Пошта" aria-label="Пошта">
+                    <span class="material-icons">mail</span>
+                </a>
+                <ul class="hsub">
+                    <li class="hsub-item"><a class="hsub-link" href="#practice">Вхідні</a></li>
+                    <li class="hsub-item"><a class="hsub-link" href="#practice">Надіслані</a></li>
+                    <li class="hsub-item hsub-item--parent">
+                        <a class="hsub-link" href="#practice">Папки</a>
+                        <ul class="hsub">
+                            <li class="hsub-item"><a class="hsub-link" href="#practice">Робота</a></li>
+                            <li class="hsub-item"><a class="hsub-link" href="#practice">Особисте</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hmenu-item">
+                <a class="hmenu-link" href="#faq" title="Профіль" aria-label="Профіль">
+                    <span class="material-icons">account_circle</span>
+                </a>
+                <ul class="hsub">
+                    <li class="hsub-item"><a class="hsub-link" href="#faq">Мій профіль</a></li>
+                    <li class="hsub-item hsub-item--parent">
+                        <a class="hsub-link" href="#faq">Налаштування</a>
+                        <ul class="hsub">
+                            <li class="hsub-item"><a class="hsub-link" href="#faq">Мова</a></li>
+                            <li class="hsub-item"><a class="hsub-link" href="#faq">Тема</a></li>
+                        </ul>
+                    </li>
+                    <li class="hsub-item"><a class="hsub-link" href="#faq">Вийти</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- ===== Вміст сторінки ===== -->
+    <main class="content" id="top">
+        <h1 class="content-title">Навігаційні панелі</h1>
+        <p class="content-lead">Горизонтальна панель зафіксована вгорі, бічна — на всю висоту вікна. Нижче розташована «липка» панель розділів: вона прилипає під верхньою панеллю, коли ви прокручуєте сторінку.</p>
+
+        <!-- Sticky-панель розділів -->
+        <nav class="tabs" aria-label="Розділи сторінки">
+            <a class="tabs-link tabs-link--active" href="#theory">Теорія</a>
+            <a class="tabs-link" href="#practice">Практика</a>
+            <a class="tabs-link" href="#faq">Питання</a>
+        </nav>
+
+        <section class="section" id="theory">
+            <h2 class="section-title">Теорія</h2>
+            <p class="section-text">Властивість position визначає спосіб позиціонування елемента. Значення relative зсуває елемент відносно його початкового місця, absolute — відносно найближчого позиціонованого предка, fixed — відносно вікна браузера, а sticky поєднує поведінку static та fixed.</p>
+            <p class="section-text">Для керування накладанням елементів використовують z-index. Він працює лише для елементів із position, відмінним від static.</p>
+            <p class="section-text">Випадні меню будуються на вкладених списках: вкладений список абсолютно позиціонується відносно батьківського пункту та показується при наведенні курсору або фокусі всередині пункту.</p>
+        </section>
+
+        <section class="section" id="practice">
+            <h2 class="section-title">Практика</h2>
+            <p class="section-text">Наведіть курсор на піктограми у верхній панелі або на пункти бічної панелі, щоб побачити вкладені рівні. Меню також відкриваються з клавіатури: перейдіть до пункту клавішею Tab.</p>
+            <p class="section-text">Активний пункт кожної панелі виділено кольором. Права піктограма у верхній панелі вирівняна праворуч за допомогою float: right.</p>
+            <p class="section-text">Бічне меню має три рівні вкладеності: курси, розділи курсу та окремі теми.</p>
+        </section>
+
+        <section class="section" id="faq">
+            <h2 class="section-title">Питання</h2>
+            <p class="section-text">Чим відрізняється position: fixed від position: sticky? Fixed не залежить від прокручування взагалі, а sticky залишається в потоці документа, доки не досягне заданої позиції, та прилипає лише в межах свого батьківського елемента.</p>
+            <p class="section-text">Чому для випадного меню краще використовувати visibility, а не display: none? Так приховані пункти не потрапляють у порядок табуляції, а показ можна анімувати плавною зміною прозорості.</p>
+            <p class="section-text">Продовжуйте прокручувати сторінку — панель розділів залишиться на екрані до кінця цього блоку.</p>
+        </section>
+    </main>
+</body>
+</html>
