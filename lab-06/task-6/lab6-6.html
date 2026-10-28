@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторна №6 — Завдання 6: попап</title>
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <a class="header-link" href="#">Mail</a>
+        <a class="header-link" href="#">Images</a>
+
+
+        <div class="popup-anchor">
+            <input class="popup-toggle" type="checkbox" id="popup-toggle" aria-label="Програми">
+            <label class="popup-button" for="popup-toggle">
+                <img class="popup-button-img" src="icons/popup-button.png" alt="">
+            </label>
+
+            <div class="popup">
+                <div class="popup-body" tabindex="0">
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/calendar.png" alt=""><span class="popup-name">Calendar</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/mail.png" alt=""><span class="popup-name">Mail</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/news.png" alt=""><span class="popup-name">News</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/maps.png" alt=""><span class="popup-name">Map</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/files.png" alt=""><span class="popup-name">Files</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/contacts.png" alt=""><span class="popup-name">Contacts</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/tanslation.png" alt=""><span class="popup-name">Translate</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/videos.png" alt=""><span class="popup-name">Videos</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/search.png" alt=""><span class="popup-name">Search</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/photos.png" alt=""><span class="popup-name">Photos</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/apps.png" alt=""><span class="popup-name">Apps</span></a>
+                    <a class="popup-item" href="#"><img class="popup-icon" src="icons/documents.png" alt=""><span class="popup-name">Documents</span></a>
+
+                    <div class="popup-extra">
+                        <a class="popup-item" href="#"><img class="popup-icon" src="icons/chat.png" alt=""><span class="popup-name">Chat</span></a>
+                        <a class="popup-item" href="#"><img class="popup-icon" src="icons/classroom.png" alt=""><span class="popup-name">Classroom</span></a>
+                        <a class="popup-item" href="#"><img class="popup-icon" src="icons/collection.png" alt=""><span class="popup-name">Collection</span></a>
+                        <a class="popup-item" href="#"><img class="popup-icon" src="icons/mars.png" alt=""><span class="popup-name">Mars</span></a>
+                        <a class="popup-item" href="#"><img class="popup-icon" src="icons/blogs.png" alt=""><span class="popup-name">Blogs</span></a>
+                        <a class="popup-item" href="#"><img class="popup-icon" src="icons/promo.png" alt=""><span class="popup-name">Promos</span></a>
+                    </div>
+                </div>
+
+                <div class="popup-footer">
+                    <input class="more-toggle" type="checkbox" id="more-toggle" aria-label="Показати більше">
+                    <label class="more-label" for="more-toggle">
+                        <span class="more-text">More</span>
+                        <span class="more-text more-text--alt">Even more from Kottans</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <a class="header-icon" href="#" aria-label="Сповіщення"><img class="header-icon-img" src="icons/bell.png" alt=""></a>
+        <a class="avatar" href="#" aria-label="Профіль">K</a>
+    </header>
+
+    <main class="page-content">
+        <h1 class="page-title">Попап без JavaScript</h1>
+        <p class="page-text">Натисніть на сітку значків у шапці (або перейдіть до неї клавішею Tab і натисніть Space). Кнопка «More» додає ще шість іконок і робить вміст прокручуваним.</p>
+    </main>
+</body>
+</html>
